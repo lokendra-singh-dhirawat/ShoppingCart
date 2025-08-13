@@ -3,7 +3,7 @@
 A simple learning project built with React that fetches products from the public FakeStore API, displays them in a catalog, and lets users add items to a cart, change quantities, and checkout (dummy).
 🚀 Live Demo
 
-Website: <https://https://shoppingincart.netlify.app/ />
+Website: <https://https://shoppingincart.netlify.app />
 
 
 ✨ Features
