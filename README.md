@@ -1,86 +1,46 @@
-# React + Vite + TypeScript Template (react-vite-ui)
+🛒 React Shopping Cart (FakeStore API)
 
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/Dan5py/react-vite-ui/blob/main/LICENSE)
+A simple learning project built with React that fetches products from the public FakeStore API, displays them in a catalog, and lets users add items to a cart, change quantities, and checkout (dummy).
+🚀 Live Demo
 
-A React + Vite template powered by shadcn/ui.
+Website: <https://https://shoppingincart.netlify.app/ />
 
-## 🎉 Features
 
-- **React** - A JavaScript library for building user interfaces.
-- **Vite** - A fast, opinionated frontend build tool.
-- **TypeScript** - A typed superset of JavaScript that compiles to plain JavaScript.
-- **Tailwind CSS** - A utility-first CSS framework.
-- **Tailwind Prettier Plugin** - A Prettier plugin for formatting Tailwind CSS classes.
-- **ESLint** - A pluggable linting utility for JavaScript and TypeScript.
-- **PostCSS** - A tool for transforming CSS with JavaScript.
-- **Autoprefixer** - A PostCSS plugin to parse CSS and add vendor prefixes.
-- **shadcn/ui** - Beautifully designed components that you can copy and paste into your apps.
+✨ Features
 
-## ⚙️ Prerequisites
+    Browse products from FakeStore API (/products)
 
-Make sure you have the following installed on your development machine:
+    View product details page
 
-- Node.js (version 16 or above)
-- pnpm (package manager)
+    Add to cart, remove, and update quantity
 
-## 🚀 Getting Started
+    Cart total and item count
 
-Follow these steps to get started with the react-vite-ui template:
+    Basic loading and error states
 
-1. Clone the repository:
 
-   ```bash
-   git clone https://github.com/dan5py/react-vite-ui.git
-   ```
+🧰 Tech Stack
 
-2. Navigate to the project directory:
+    React 
 
-   ```bash
-   cd react-vite-ui
-   ```
+    React Router
 
-3. Install the dependencies:
+    Context API
 
-   ```bash
-   pnpm install
-   ```
+    TypeScript
 
-4. Start the development server:
+    Vite 
 
-   ```bash
-   pnpm dev
-   ```
+    Styling: Tailwind CSS / CSS Modules / shadcn component
 
-## 📜 Available Scripts
+📦 API
 
-- pnpm dev - Starts the development server.
-- pnpm build - Builds the production-ready code.
-- pnpm lint - Runs ESLint to analyze and lint the code.
-- pnpm preview - Starts the Vite development server in preview mode.
+    Base: https://fakestoreapi.com
 
-## 📂 Project Structure
+    Used endpoints:
 
-The project structure follows a standard React application layout:
+        GET /products — list products
 
-```python
-react-vite-ui/
-  ├── node_modules/      # Project dependencies
-  ├── public/            # Public assets
-  ├── src/               # Application source code
-  │   ├── components/    # React components
-  │   │   └── ui/        # shadc/ui components
-  │   ├── styles/        # CSS stylesheets
-  │   ├── lib/           # Utility functions
-  │   ├── App.tsx        # Application entry point
-  │   └── index.tsx      # Main rendering file
-  ├── eslint.config.js     # ESLint configuration
-  ├── index.html         # HTML entry point
-  ├── postcss.config.js  # PostCSS configuration
-  ├── tailwind.config.ts # Tailwind CSS configuration
-  ├── tsconfig.json      # TypeScript configuration
-  └── vite.config.ts     # Vite configuration
-```
+        GET /products/:id — product details
 
-## 📄 License
-
-This project is licensed under the MIT License. See the [LICENSE](https://choosealicense.com/licenses/mit/) file for details.
+    The FakeStore API is public; occasional latency or changes are possible.
